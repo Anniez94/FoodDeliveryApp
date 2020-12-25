@@ -11,3 +11,5 @@ react-native-iphone-x-helper,
 react-native-reanimated,
 react-native-safe-area-context,
 react-native-svg
+
+In your ios/fooddeliveryapp/AppDelegate.m, scroll down and put in your google Api key
