@@ -98,7 +98,8 @@ const Home =({navigation}) => {
             },
             courier: {
                 avatar: images.avatar_1,
-                name: "Anne"
+                name: "Anne",
+                tel: "08134091511"
             },
             menu: [
                 {
@@ -141,7 +142,8 @@ const Home =({navigation}) => {
             },
             courier: {
                 avatar: images.avatar_2,
-                name: "Jackson"
+                name: "Jackson",
+                tel: "08144091511"
             },
             menu: [
                 {
@@ -192,7 +194,8 @@ const Home =({navigation}) => {
             },
             courier: {
                 avatar: images.avatar_3,
-                name: "James"
+                name: "James",
+                tel: "08034091521"
             },
             menu: [
                 {
@@ -219,7 +222,8 @@ const Home =({navigation}) => {
             },
             courier: {
                 avatar: images.avatar_4,
-                name: "Ahmad"
+                name: "Ahmad",
+                tel: "08004091511"
             },
             menu: [
                 {
@@ -246,7 +250,8 @@ const Home =({navigation}) => {
             },
             courier: {
                 avatar: images.avatar_4,
-                name: "Muthu"
+                name: "Muthu",
+                tel: "08122091511"
             },
             menu: [
                 {
@@ -299,7 +304,8 @@ const Home =({navigation}) => {
             },
             courier: {
                 avatar: images.avatar_1,
-                name: "Jessie"
+                name: "Jessie",
+                tel: "08100091511"
             },
             menu: [
                 {

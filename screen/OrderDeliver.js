@@ -3,7 +3,8 @@ import {
     View,
     Text,
     Image,
-    TouchableOpacity
+    TouchableOpacity,
+    Linking
 } from "react-native";
 import MapView, { PROVIDER_GOOGLE, Marker } from 'react-native-maps';
 import MapViewDirections from "react-native-maps-directions";
@@ -11,7 +12,6 @@ import MapViewDirections from "react-native-maps-directions";
 import { COLORS, FONTS, icons, SIZES, GOOGLE_API_KEY } from "../constants"
 
 const OrderDelivery = ({ route, navigation }) => {
-
     const mapView = useRef();
 
     const [restaurant, setRestaurant] = useState(null)
@@ -25,7 +25,7 @@ const OrderDelivery = ({ route, navigation }) => {
     const [angle, setAngle] = useState(0)
 
     useEffect(() => {
-        let { restaurant, currentLocation } = route.params;
+        let { restaurant, currentLocation} = route.params;
 
         let fromLoc = currentLocation.gps
         let toLoc = restaurant.location
@@ -299,7 +299,9 @@ const OrderDelivery = ({ route, navigation }) => {
                                 justifyContent: 'center',
                                 borderRadius: 10
                             }}
-                            onPress={() => navigation.navigate("Home")}
+                            onPress={() => 
+                                Linking.openURL(`tel:${restaurant?.courier.tel}`)
+                            }
                         >
                             <Text style={{ ...FONTS.h4, color: COLORS.white }}>Call</Text>
                         </TouchableOpacity>
